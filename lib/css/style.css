@@ -1,0 +1,285 @@
+/*INDEX.HTML*/
+
+/*BODY-anything visible*/
+body{
+    padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+    background: #F2F2F2;
+}
+
+/*NAVIGATION*/
+header{
+    position: absolute;/*header stay at top always*/
+    width: 100%;
+}
+
+.bg-dark{
+    background-color: transparent !important; /*navigation backgound color is transparent with the picture*/
+}
+
+/*LOGO. ie.NG*/
+.navbar-brand {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: white;
+    padding: 30px 50px;
+    background-color: #4B0082;
+    letter-spacing: 6px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.navbar-brand:hover {
+    background-color: lightblue;/*background color changes when user hover on the logo*/
+}
+
+/*NAVIGATION LINKS. ie.about me, resume...*/
+.nav-item {
+    padding: 0 10px;
+    font-weight: 800;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover{
+  border-top: 5px solid #4B0082;
+  border-bottom: 5px solid #4B0082;
+  padding: 6px 0;    
+}
+/*nav-bar TOGGLER*/
+.navbar-dark .navbar-toggler{
+    color: white;
+    border: 4px solid white;
+    
+}
+
+
+/*BACKGROUND IMAGE*/
+.wallpaper {
+    background: url(/images/code.jpg); /*image used as background*/
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    padding: 350px 0 200px;
+   
+}
+
+/*font changed for header tags and paragraph tages in the wallpaper*/
+.wallpaper h2, p {
+    color: white !important;
+}
+
+.wallpaper h2{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 4.5rem;
+    margin: .9rem 0; 
+    font-family: 'Aladin', cursive;
+}
+
+.wallpaper p {
+    line-height: 1.6rem;
+}
+
+/* RESUMEBUTTON*/
+.button {
+    color: white;
+    display: inline-block;
+    background: #4B0082;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    font-weight: 750;
+	letter-spacing: 2px;
+}
+
+.button:hover{
+     text-decoration: none;
+     color: black;
+}
+
+/*IMAGE OF ME*/
+.img-fluid{
+    border-radius: 50%;
+    border: 5px double white;
+	margin-top: 30px;
+}
+
+/*ICONS to link to external pages*/
+.site-links a{
+	font-size: 30px;
+	padding: 20px;
+	color: #FFF;
+}
+
+.site-links a:hover{
+	color: #4B0082;
+}
+
+.site-links {
+	margin-top: 20px;
+}
+
+
+/*RESUME.HTML*/
+
+/*WAL:LPAPER HEIGHT*/
+.wallpaper{
+    min-height: 30vh; 
+ }
+ /*TEXT IN WALLPAPER*/
+ .title {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 60px;
+ }
+ .title h2{
+     color: #FFF !important;
+     font-family: 'Aladin', cursive;
+     font-size: 60px;
+ }
+ 
+ /*LINKS IN THE WALLPAPER*/
+ .links {
+     display: flex;
+     justify-content: center;
+     margin-top: 70px;
+ }
+ 
+ .links a{
+     display: inline-block;
+     padding: 10px 20px;
+     text-transform: uppercase;
+     text-decoration: none;
+     color: #FFF;
+     font-weight: 600;
+     font-size: 15px;
+ }
+ .links a:hover{
+     border-bottom: 4px solid #4B0082;
+     border-top: 2px solid #4B0082;
+ }
+ 
+ /*container which contains all the resume contents*/
+ .container-section {
+     max-width: 1550px;
+     margin: 40px auto;
+     padding: 30px;
+ }
+ 
+ /*LEFT AND RIGHT SECTIONS*/
+ .sections{
+        display: grid;
+     grid-template-columns: 1fr 4fr;
+     grid-gap: 20px;
+     padding: 24px 44px;
+ }
+ .sections:nth-child(odd){
+     background: #4B0082;
+     color: #FFF;   
+ }
+ 
+ .left-section{
+     text-transform: uppercase;
+     font-weight: bold;
+ }
+ .right-section ul {
+       list-style-type: circle;
+ }
+ .school{
+     border-bottom: 1px solid #FFF;
+     margin-bottom: 24px;
+     padding-bottom: 24px;
+ }
+ 
+ .school:last-child {
+     border-bottom: none;
+ }
+ .school-info{
+     display:  flex;
+     justify-content: space-between;
+     margin-bottom: 20px;
+     font-size: 16px;
+ }
+ 
+ 
+ /*SKILL PERCENTAGE*/
+ .skills-percentage {
+     box-sizing: border-box;
+     width: 100%;
+     margin: 20px 0;
+ }
+ 
+ .skills-percentage p{
+     text-transform: uppercase;
+     margin: 0 0 10px;
+     padding: 0;
+     font-weight: bold;
+     color: black !important;
+ }
+ .skills-percentage p:nth-child(2){
+     float: right;
+     position: relative;
+     top: -42px;
+ }
+ .percent{
+     background: red;
+     border-radius: 3px;
+ }
+ .skill-percent{
+     background: #4B0082;
+     width: 100%;
+     height: 3px;
+ }
+ 
+ /*FOOTERS*/
+ .footer-content{
+     padding-top: 20px;
+     background: #9370DB; 
+ }
+ .copyright-content p{
+     color: #FFF !important;
+     padding-right: 90px;
+     padding-left: 90px;
+     padding-top: 40px;
+ }
+ 
+ .line {
+     padding: .5px;
+     margin-top: 20px;
+     background: #FFF !important;
+     width: 700px;
+     margin-left: 150px;
+ }
+ 
+ /*ICONS IN THE FOOTER*/
+ .icons {
+     display: flex;
+     justify-content: center;
+     background: #9370DB;
+  
+ }
+ .icons a{
+     padding-top: 20px;
+     padding-right: 40px;
+     padding-bottom: 20px;
+     font-size: 30px;
+     color: #FFF;
+ }
+ .icons a:hover{
+     color: #4B0082;
+ }
+ .last-footer{
+     background: #4B0082;
+     display: flex;
+     justify-content: center;
+ }
+ .last-footer p{
+     padding-top: 10px;
+     color: lightgray !important;
+ }

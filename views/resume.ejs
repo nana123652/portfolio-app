@@ -1,0 +1,343 @@
+<!DOCTYPE html> <!--declares it as an HTML5 document-->
+<html lang="en">
+   
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta charset="utf-8">
+			<!--title of the page-->
+            <title> Nana Portfolio</title>
+        
+		<!--links te stylesheet from bootstap-->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+		<!--links the style.css( this stylesheet has code to add a background image and change the color of the text-->
+            <link rel="stylesheet" type="text/css" href="/style">
+       
+		<!--links google font in order to have special font-family on the page-->
+            <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Quintessential|Saira+Stencil+One&display=swap" rel="stylesheet">
+		
+		<!--links the icons to the webpage -->
+		<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<script>
+			//functions fades in image.
+			$(document).ready(function () {
+			$('div.hidden').fadeIn(5000).removeClass('hidden');
+		});
+		</script>
+		<style>
+			/*hides the image*/
+			.hidden{
+	  			display: none;
+			}
+			
+	   </style>
+    </head>
+    
+    <body>
+     
+    <header>
+		<!--creating the navigation-->
+        <div class="container">
+			<!--whole navigation expands and has a background color of dark-->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              	
+			  <!--logo brand-->
+                    <a class="navbar-brand d-none d-lg-inline-block" href="/">NG</a>
+              
+                <!--collapse button for navigation-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+			  	<!--navigation links-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  
+                <ul class="navbar-nav ml-lg-auto">
+                   
+                  <li class="nav-item">
+                    <a class="nav-link" href="/">About Me</a>
+                  </li>
+                   
+                  <li class="nav-item">
+                    <a class="nav-link" href="/resume">Resume</a>
+                  </li>
+                   
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                  </li>
+                 
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+					
+					
+              </ul>
+              </div>
+          </nav>    
+    	</div>
+    </header>
+        
+		<!--WALLPAPER-->
+    <section class="wallpaper">  
+            <div class="container">
+                <div class="title">
+					<!--page title -->
+                    <h2>Resume</h2>
+                </div>
+                
+                    <!--Internal links to each section on the page-->
+                 <div class="links">
+                        <a href="#education" id="mouse">Education </a>
+                        <a href="#skills">Skills</a>
+                        <a  href="#work-history">Work History</a>
+                        <a  href="#accomplishments" >Accomplishments</a>
+                    </div>
+                </div>
+        </section>
+        
+		
+    <div class="container-section" >
+		<!--education section. divides section into two columns with the section name on the left side and the detailed info like the school name, range and description on the right side.-->
+         <section class="sections education-section" id="education">
+                <!--section name-->
+			 <div class="left-section">Education</div>
+             
+                <div class="right-section">
+					<!--school infro-->
+                    <div class="school">
+                        <div class="school-info">
+                            <div>
+								<!--school name, location and dates-->
+                                <div>George Mason University, Fairfax, VA </div>
+                                <div><strong>BS:</strong> Information Technology (GPA: 3.64) </div>
+                            </div>
+                            
+                             <div>CURRENT—MAY 2020 </div>
+                        </div><!--ends school-ifnp-->
+                        
+						<!--school description -->
+                        <uL>
+                            <li>Majoring in Information Technology</li>
+                            <li>Coursework in: IT Architecture Fundamentals Multimedia, Web Design Discrete Structures Introduction to Computing, IT Problem Solving Using Computer Programming and Object-Oriented Techniques for IT Problem Solving</li>
+                            <li>Member of National Society of Black Engineers(NSBE)</li>
+                        </uL>
+                    </div>
+
+            		<!--school name, location and dates-->
+                    <div class="school">
+                        <div class="school-info">
+                            <div>
+                                <div>Northern Virginia Community College, Alexandria, VA  </div>
+                                <div>High School Diploma</div>    
+                            </div>
+                            <!--date attended-->
+                            <div>JUNE 2017 </div>
+                        </div><!--ends school-ifnp-->
+                        <!--school description-->
+                        <ul>
+                            <li>Graduated with 4.0 GPA</li>
+                            <li>English Dual Enrollment (6 credits received and transferred to GMU)</li>
+                        </ul>
+                    </div>
+                </div>
+             
+        </section>
+        resume
+		<!--skills sections-->
+        <section class="sections skills-content" id="skills">
+			<!--section name. ie.Skills-->
+                <div class="left-section">Skills</div>
+			<!--skills bar-->
+                <div class="right-section">
+                    <div class="skills-percentage">
+						<!--program name-->
+                            <p>HTML5</p>
+						<!--level I am at in terms of studying the language -->
+                            <p>80%</p>
+                            <div class="percent">
+								<!--div class to fill the bar with the right percentage-->
+                                <div class="skill-percent" style="width: 80%"></div>
+                            </div>    
+                    </div>
+                    
+                     <div class="skills-percentage">
+						 <!--program langiuage name-->
+                            <p>JAVA</p>
+						 <!--level I am at in terms of studying the language -->
+                            <p>40%</p>
+                            <div class="percent">
+								<!--div class to fill the bar with the right percentage-->
+                                <div class="skill-percent" style="width: 40%"></div>
+                            </div>    
+                    </div>
+                    
+                     <div class="skills-percentage">
+						 <!--program langiuage name-->
+                            <p>PHP</p>
+						  <!--level I am at in terms of studying the language -->
+                            <p>10%</p>
+                            <div class="percent">
+								<!--div class to fill the bar with the right percentage-->
+                                <div class="skill-percent" style="width:10%"></div>
+                            </div>    
+                    </div>
+                    
+                     <div class="skills-percentage">
+						 <!--program langiuage name-->
+                            <p>JAVASCRIPT</p>
+						  <!--level I am at in terms of studying the language -->
+                            <p>20%</p>
+                            <div class="percent">
+								<!--div class to fill the bar with the right percentage-->
+                                <div class="skill-percent" style="width: 10%"></div>
+                            </div>    
+                    </div>
+                    
+                     <div class="skills-percentage">
+						 <!--langauge name-->
+                            <p>MySQL</p>
+						  <!--level I am at in terms of studying the language -->
+                            <p>60%</p>
+                            <div class="percent">
+								<!--div class to fill the bar with the right percentage-->
+                                <div class="skill-percent" style="width: 60%"></div>
+                            </div>    
+                    </div>
+                </div>
+        </section>
+        
+    <!--work history section. format is simpilar to the education section-->
+         <section class="sections experience-section" id="work-history">
+                <div class="left-section">Work history</div>
+             
+                <div class="right-section">
+                    <div class="school">
+                        <div class="school-info">
+                            <div>
+                                <div> <strong><em>Peer Mentor </em></strong>| George Mason Universtion</div>
+                            </div>
+                            
+                             <div>01/2019 - 05/2019</div>
+                        </div><!--ends school-ifnp-->
+                        
+                        <uL>
+                            <li>Assist students in helping them understand related courses in IT</li>
+                            <li>Assist with organizing and setting for school events</li>
+                        </uL>
+                    </div>    
+                    
+                    <div class="school">
+                        <div class="school-info">
+                            <div>
+                                <div> <strong><em>Customer Service Associate </em></strong>| Lowes(Fairfax)</div>
+                            </div>
+                            
+                             <div>02/2018 - CURRENT</div>
+                        </div><!--ends school-ifnp-->
+                        
+                        <uL>
+                            <li>Providing friendly customer service to Lowe's customers by actively listening to them, answering their questions about store products, and providing assistance in the sales floor. </li>
+                            <li>Contact customers to follow up on orders, assisting them in signing up for benefits like Military discount, Lowe's credit cards and Tax exempts</li>
+                        </uL>
+                    </div> 
+                    
+                    
+                    <div class="school">
+                        <div class="school-info">
+                            <div>
+                                <div> <strong><em>Product Pickup Associate</em></strong>| Lowes(Fairfax)</div>
+                            </div>
+                            
+                             <div>10/2018 - CURRENT</div>
+                        </div><!--ends school-ifnp-->
+                        
+                        <uL>
+                            <li>Ensure pickup orders are fulfilled including, ensuring orders are picked and staged, checking the status of pickup orders, and addressing any order issues</li>
+                            <li>Responsible for providing excellent customer service by greeting customers, fulfilling customer requests, identifying customer needs, and handling customer concerns. </li>
+                        </uL>
+                    </div> 
+                    
+                    <div class="school">
+                        <div class="school-info">
+                            <div>
+                                <div> <strong><em>Tech Help Desk (Volunteer)</em> </strong>| Mount Vernon High School</div>
+                            </div>
+                            
+                             <div>10/2016 - 07/2017</div>
+                        </div><!--ends school-ifnp-->
+                        
+                        <uL>
+                            <li>Resolve any problems with student's computer.</li>
+                            <li>Thoroughly prepares for and completes tasks.</li>
+                        </uL>
+                    </div>        
+            </div>
+        </section>
+        
+		<!--experience section created. similar to the education section-->
+        <section class="sections experience-section" id="accomplishments">
+                <div class="left-section">Accomplishments</div>
+             
+                <div class="right-section">
+                        
+                        <uL>
+                            <li>Received the "Employee of the Month" award after the first month of employment at Lowe's </li>
+                            <li>Scholastic Achievement Award
+                                <uL>
+                                    <li>May 2017: National Pan-Hellenic Council Inc</li>
+                                    <li>Was awarded in recognition of sustained academic excellence</li>
+                                </uL>
+                            </li>
+                            <li>Feb 2018: Awarded for outstanding performance(Mason)</li>
+                        </uL>
+                </div>
+         </section>
+        
+        
+        <!--section for the footer created-->
+        <section class="footer-content">
+        
+        <div class="copyright-content">
+			
+            <div class="container">
+				<!--div to create a padding line with background color white-->
+             <div class="line"></div>
+            </div>
+			
+			<!--disclaimer info added -->
+            <div class="row">
+                <div class="col-12"><p>This website is developed as an educational project. If any copyrighted materials are included in accordance to the multimedia fair use guidelines, a notice should be added and states that “certain materials are included under the fair use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use.</p></div>
+                
+				<!--icons links to pages like github, linkedln, instagram, facebook and twitter-->
+                <div class="col-12 ">
+                 <div class="icons">
+                    <a href="https://github.com/nana123652" target="_blank"><i class="icon ion-logo-github size"></i></a>
+                    <a href="https://www.linkedin.com/in/ngyamfi?trk=people-guest_profile-result-card_result-card_full-click" target="_blank"><i class="icon ion-logo-linkedin"></i></a>
+				   	<a href="https://www.instagram.com/lil_ck3/" target="_blank"><i class="icon ion-logo-instagram"></i></a>
+				   <a href="https://www.facebook.com/" target="_blank"><i class="icon ion-logo-facebook"></i></a>
+					 <a href="https://twitter.com/" target="_blank"><i class="icon ion-logo-twitter"></i></a>
+					</div>
+                </div>   
+            </div>
+        </div>
+        </section>
+        
+		<!--last footer with my name and copyright infro-->
+        <section class="last-footer">
+        <div class="row">
+                <div class="col-12">
+                    <div class="last-footer">
+						<!--main.jss will display the modified date below-->
+                      <p id="date"></p>
+                    </div>
+                </div>
+        </div>
+        </section>
+        </div>
+		<script src="main.js"></script>
+    </body>
+    
+</html>

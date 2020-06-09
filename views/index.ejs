@@ -1,0 +1,123 @@
+<!DOCTYPE html> <!--declares it as an HTML5 document-->
+<html lang="en">
+   
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta charset="utf-8">
+			<!--title of the page-->
+            <title> Nana Portfolio</title>
+        
+		<!--links te stylesheet from bootstap-->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+		<!--links the style.css( this stylesheet has code to add a background image and change the color of the text-->
+            <link rel="stylesheet" type="text/css" href="/style">
+       
+		<!--links google font in order to have special font-family on the page-->
+            <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Quintessential|Saira+Stencil+One&display=swap" rel="stylesheet">
+		
+		<!--links the icons to the webpage -->
+		<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<script>
+			//functions fades in image.
+			$(document).ready(function () {
+			$('div.hidden').fadeIn(5000).removeClass('hidden');
+		});
+		</script>
+		<style>
+			/*hides the image*/
+			.hidden{
+	  			display: none;
+			}
+			
+	   </style>
+    </head>
+    
+    <body>
+     
+    <header>
+		<!--creating the navigation-->
+        <div class="container">
+			<!--whole navigation expands and has a background color of dark-->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              	
+			  <!--logo brand-->
+                    <a class="navbar-brand d-none d-lg-inline-block" href="/">NG</a>
+              
+                <!--collapse button for navigation-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+			  	<!--navigation links-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  
+                <ul class="navbar-nav ml-lg-auto">
+                   
+                  <li class="nav-item">
+                    <a class="nav-link" href="/">About Me</a>
+                  </li>
+                   
+                  <li class="nav-item">
+                    <a class="nav-link" href="/resume">Resume</a>
+                  </li>
+                   
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                  </li>
+                 
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+					
+					
+              </ul>
+              </div>
+          </nav>    
+    	</div>
+    </header>
+    
+	<!--Background image and info-->
+    <section class="wallpaper">   
+       <div class="container">
+        <div class="row">
+           <div class="col-12 col-md-6 col-sm-12">
+			   <!--contents on the left side; includes job title and info-->
+			   <!--job title-->
+               <h2> Full-Stack Developer </h2>
+			   <!--job info-->
+               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+               
+			   <!--link to resume page-->
+               <a href="/index" class="button">Resume</a>
+			   
+			   <!--icon links to github, linkdeln, instagram, and facebook-->
+			   <div class="site-links">
+                    <a href="https://github.com/nana123652" target="_blank"><i class="icon ion-logo-github size"></i></a>
+                    <a href="https://www.linkedin.com/in/ngyamfi?trk=people-guest_profile-result-card_result-card_full-click" target="_blank"><i class="icon ion-logo-linkedin"></i></a>
+				   	<a href="https://www.instagram.com/lil_ck3/" target="_blank"><i class="icon ion-logo-instagram"></i></a>
+				   <a href="https://www.facebook.com/" target="_blank"><i class="icon ion-logo-facebook"></i></a>
+
+			   </div> 
+            </div>
+			
+          
+           <div class=" hidden col-12 col-md-6 col-sm-12">
+               <img src="/images/nana.png" class="img-fluid" alt="picture of me">
+            </div>
+			
+			
+        </div>
+    </div>
+    </section>
+   
+    
+    </body>
+
+</html>
+
+
+ 
