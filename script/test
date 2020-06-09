@@ -1,0 +1,3 @@
+#!/bin/sh
+
+nodemon /home/user-test/Desktop/portfolio-app/server.js
